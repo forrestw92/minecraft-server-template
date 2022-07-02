@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from "../components/Header";
 
 const Showcase = () => {
     return (
         <div>
-        <h1>Showcase</h1>
+            <Header/>
+            <h1>Showcase</h1>
         </div>
     )
 }

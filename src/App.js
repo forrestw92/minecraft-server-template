@@ -1,15 +1,17 @@
 import './App.css';
 import React from "react";
 import {Link, Route, Routes} from "react-router-dom";
-import Home from "./components/Home";
-import Mods from "./components/Mods";
-import Datapacks from "./components/Datapacks";
-import Rules from "./components/Rules";
-import Other from "./components/Other";
+import Home from "./components/Tabs/Home";
+import Mods from "./components/Tabs/Mods";
+import Datapacks from "./components/Tabs/Datapacks";
+import Rules from "./components/Tabs/Rules";
+import Other from "./components/Tabs/Other";
+import Header from "./components/Header";
 
 function App() {
     return (
-        <>
+        <main>
+            <Header/>
             <div className="links">
                 <Link to={"/"} className="link">Home</Link>
                 <Link to={"/rules"} className="link">Contact</Link>
@@ -24,7 +26,7 @@ function App() {
                 <Route path={"/rules"} element={<Rules/>} />
                 <Route path={"/other"} element={<Other/>} />
             </Routes>
-        </>
+        </main>
   );
 }
 

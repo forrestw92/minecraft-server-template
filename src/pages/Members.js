@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from "../components/Header";
 
 const Members = () => {
     return (
         <div>
-        <h1>Members</h1>
+            <Header/>
+            <h1>Members</h1>
         </div>
     )
 }
