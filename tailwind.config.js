@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "bright_squares": "url('./images/bright-squares.png')",
+      },
+    },
   },
   plugins: [],
 }
