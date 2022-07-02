@@ -19,7 +19,7 @@ function App() {
     return (
         <>
             <Header/>
-            <main className={"flex flex-col justify-center w-full"}>
+            <main className={"flex flex-col justify-center w-full mb-10"}>
                 <section className="max-w-screen-xl mt-10 bg-slate-800 rounded-tl-md rounded-tr-md ml-4 mr-4 xl:ml-auto xl:mr-auto xl:w-full relative">
                     <ul className="flex flex-col justify-center text-center text-white transition-all lg:flex-row">
                         <li className={`${isHome ? ' border-t-green-500  bg-slate-700 ' : 'border-t-slate-800'} rounded-tr-md rounded-tl-md lg:rounded-none duration-300 ease-in-out transition-all border-t-4 text-2xl w-full lg:w-40 p-3`}><Link to={"/"}>Home</Link></li>
